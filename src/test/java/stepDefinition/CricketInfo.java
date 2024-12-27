@@ -32,7 +32,7 @@ public class CricketInfo {
         @Given("I launch web application")
         public void i_launch_web_application() throws IOException {
 //        	System.setProperty("window.chrome.driver","C:\\Users\\246416\\CUCUMBERCOMPLETEPOMOCT\\Drivers");
-        	System.getProperty(("user.dir")+"\\CUCUMBERCOMPLETEPOMOCT\\Drivers\\chromedriver.exe");
+        	System.getProperty(("user.dir")+"\\Cucumber_DBAssignment\\Drivers\\chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             Properties props=new Properties();
@@ -44,7 +44,7 @@ public class CricketInfo {
         }
         @When("I Entered Url")
         public void i_entered_url() throws FileNotFoundException {
-            FileReader reader=new FileReader("C:\\Users\\246416\\CUCUMBERCOMPLETEPOMOCT\\config\\object.properties");
+            FileReader reader=new FileReader("C:\\Users\\246416\\CUCUCMBERASSIGNMENT\\Cucumber_DBAssignment\\config\\object.properties");
             Properties prop = new Properties();
             try{
                 prop.load(reader);
